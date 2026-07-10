@@ -1,32 +1,30 @@
-# 🚗 Car Price Prediction using Machine Learning
+# 📈 Sales Prediction using Machine Learning
 
 ## 📌 Project Overview
 
-This project predicts the selling price of used cars using Machine Learning.
+This project predicts product sales using advertising expenditure across multiple marketing channels.
 
-The prediction is based on features like:
+Input Features:
 
-- Car Name
-- Present Price
-- Kilometers Driven
-- Fuel Type
-- Transmission
-- Selling Type
-- Owner Count
-- Car Age
+- TV Advertising Budget
+- Radio Advertising Budget
+- Newspaper Advertising Budget
 
-A Random Forest Regression model is used to estimate the selling price.
+Target:
+
+- Sales
+
+A Linear Regression model is used to forecast future sales.
 
 ---
 
 ## 🎯 Objectives
 
-- Load and preprocess car dataset
-- Handle categorical variables
-- Perform feature engineering
-- Train Random Forest Regressor
-- Evaluate regression performance
-- Predict selling price
+- Load advertising dataset
+- Explore and clean data
+- Train Linear Regression model
+- Evaluate prediction accuracy
+- Predict future sales
 - Save trained model
 
 ---
@@ -45,12 +43,11 @@ A Random Forest Regression model is used to estimate the selling price.
 ## 📂 Project Structure
 
 ```
-Car-Price-Prediction/
+Sales-Prediction/
 │
-├── Car_Price_Prediction.ipynb
-├── car data.csv
-├── car_price_model.pkl
-├── label_encoders.pkl
+├── Sales_Prediction.ipynb
+├── Advertising.csv
+├── sales_prediction_model.pkl
 ├── README.md
 ├── requirements.txt
 ```
@@ -59,15 +56,14 @@ Car-Price-Prediction/
 
 ## 📊 Workflow
 
-1. Data Loading
+1. Load Dataset
 2. Data Cleaning
-3. Feature Engineering
-4. Label Encoding
-5. Train-Test Split
-6. Model Training
-7. Model Evaluation
+3. Feature Selection
+4. Train-Test Split
+5. Train Linear Regression
+6. Evaluate Model
+7. Predict Sales
 8. Save Model
-9. User Prediction
 
 ---
 
@@ -89,16 +85,17 @@ pip install -r requirements.txt
 Run
 
 ```
-Car_Price_Prediction.ipynb
+Sales_Prediction.ipynb
 ```
 
 ---
 
 ## 📌 Output
 
-- Predicted Car Price
+- Predicted Sales
+- Regression Metrics
 - Feature Importance
-- Actual vs Predicted Plot
+- Actual vs Predicted Graph
 
 ---
 
